@@ -99,6 +99,6 @@ const port = process.env.PORT || 3000
 mongoose.connect(keys.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true }, function(err){
     if(err) return console.log(err);
     app.listen(port, function(){
-        console.log("server waiting for connection...");
+        console.log("to connect use this URL - localhost:3000 ");
     });
 });
