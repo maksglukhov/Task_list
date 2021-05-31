@@ -22,7 +22,7 @@ const userSchema = new Schema({
         type: String,
         required: true,
         enum: ['Admin', 'User'],
-        default: 'Admin'
+        default: 'User'
     }
 });
 module.exports = mongoose.model("User", userSchema);
